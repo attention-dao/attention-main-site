@@ -14,31 +14,28 @@ class Mint extends React.Component {
             offset: 0,
         }
     }
-    componentDidMount() {
-        // Mint page should be as stable as possible
-        // this.startCounter()
-    }
+    // componentDidMount() {
+    //     // Mint page should be as stable as possible
+    //     // this.startCounter()
+    // }
 
     renderDescription = () => {
         return (
-            <div>
+            <div className="description-wrapper">
                 <div className="description invert-me">          
                     <h2>Your Attention is in your hands</h2>
                     <p>
                         NFT Mint Q1 2022
-                    </p>
-                    <br />
-                    <p>
+                        <br />
+                        <br />
                         Rebase DAO Staking Booster
-                    </p>
-                    <p>
+                        <br />
                         Details TBA
-                    </p>
-                    <br />
-                    <p>
+                        <br />
+                        <br />
                         Your MetaMask wallet does not need to be connected until the mint is live.
                         <br />
-                        We will not be running stealth launches of the NFT or DAO.
+                        We will NOT be running stealth launches of the NFT or DAO.
                     </p>
                 </div>
             </div>
@@ -88,7 +85,9 @@ class Mint extends React.Component {
             <div 
             style={contentStyle} 
             className="content-mint">
-                <img src={MAINIMG} alt="_"></img>
+                <div className="content-mint-img-wrapper">
+                    <img src={MAINIMG} alt="_" />
+                </div>
                 <button 
                     onClick={() => this.handleMintClick()}
                     disabled={this.handleButtonEnabled() ? "" : "disabled"}

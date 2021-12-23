@@ -106,7 +106,10 @@ a {
 
 @media all and (max-width: 760px) {
     .header {
+        margin: 0;
+        padding: 0 0 8px 0;
         height: 120px;
+        min-width: 280px;
         flex-direction: column;
     }
 
@@ -120,8 +123,26 @@ a {
     }
 
     .sub-header-right {
-        justify-content: space-evenly;
+        justify-content: space-around;
+    }
+
+    .sub-header-socials {
+        margin: 0 0 0 8px;
     }
     
+    .sub-header-socials a {
+        height: 60px;
+        width: 60px;
+    }
 
+    .wallet {
+        margin: 0;
+    }
+
+    .mint-link {
+        height: 80%;
+        width: 80%;
+        border-radius: 10px;
+        font-size: 24px;
+    }
 }

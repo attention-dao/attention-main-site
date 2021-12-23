@@ -63,7 +63,7 @@ class Landing extends React.Component {
     }
     renderDescription = () => {
         return (
-            <div>
+            <div className="description-wrapper">
                 <div className="description">          
                     <h2>Your Attention is in your hands</h2>
                     <br />
@@ -76,6 +76,7 @@ class Landing extends React.Component {
                             <br />
                             <br />
                             Rebase DAO with APR Booster from NFT
+                            <br />
                             <br />
                             NFT PoC {this.rightArrow()} NFT Mint {this.rightArrow()} Whitepaper and Token Launch {this.rightArrow()} Selective Rebase DAO Launch 
                         </strong>
@@ -106,7 +107,9 @@ class Landing extends React.Component {
             <div 
             style={contentStyle} 
             className="content">
-                <img src={MAINIMG} alt="_"></img>
+                <div className="content-img-wrapper">
+                    <img src={MAINIMG} alt="_" />
+                </div>
                 <div 
                     className="coming-soon" 
                     style={invertContentStyle}>
